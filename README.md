@@ -9,16 +9,15 @@
 
 ## Datasets
 
-Pretrained data to initialize our neurOps are hosted on 百度网盘[BaiduNetdisks](https://pan.baidu.com/s/1r9zyYzD2-GuNGgu2dSKAYg) (code:pld9). 
+Pretrain data to initialize our neurOps is hosted on [百度网盘](https://pan.baidu.com/s/1r9zyYzD2-GuNGgu2dSKAYg) (code:pld9). 
 Or you can directly use the pretrained model weights provided in the repo.
 
 ### MIT-Adobe FiveK
 
 
+There are two preprocessed versions of MIT-Adobe FiveK, in our paper, we refer them as MIT-Adobe FiveK-Dark (originally provided by [CSRNet](https://github.com/hejingwenhejingwen/CSRNet)) and MIT-Adobe FiveK-Lite (originally provided by [Distort-and-Recover](https://github.com/Jongchan/DISTORT-AND-RECOVER-CVPR18)). 
 
-There are two preprocessed versions of MIT-Adobe FiveK, we refer them as MIT-Adobe FiveK-Dark (originally provided by [CSRNet](https://github.com/hejingwenhejingwen/CSRNet)) and MIT-Adobe FiveK-Lite (originally provided by [Distort-and-Recover](https://github.com/Jongchan/DISTORT-AND-RECOVER-CVPR18)) in our paper. 
-
-We host all these data in 百度网盘[BaiduNetdisks](https://pan.baidu.com/s/1GD1VzZhSoRG6qOQ55u2buQ) (code:jvvq)
+We host all these data in [百度网盘](https://pan.baidu.com/s/1GD1VzZhSoRG6qOQ55u2buQ) (code:jvvq)
 
 
 
