@@ -1,7 +1,5 @@
 # Neural Color Operators for Sequential Image Retouching (ECCV 2022)
 
-[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/neural-color-operators-for-sequential-image/image-retouching-on-mit-adobe-fivek)](https://paperswithcode.com/sota/image-retouching-on-mit-adobe-fivek?p=neural-color-operators-for-sequential-image)
-
 [Yili Wang](https://yili.host/), Xin Li, [Kun Xu](https://cg.cs.tsinghua.edu.cn/people/~kun/), Donglinag He, Qi Zhang, Fu Li, Errui Ding
 
 [[`arXiv`](https://arxiv.org/abs/2207.08080)] [[`Project`](https://amberwangyili.github.io/neurop)] [[`BibTeX`](#CitingNeurOp)]
