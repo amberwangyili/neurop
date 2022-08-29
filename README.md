@@ -2,7 +2,11 @@
 
 [Yili Wang](https://yili.host/), Xin Li, [Kun Xu](https://cg.cs.tsinghua.edu.cn/people/~kun/), Donglinag He, Qi Zhang, Fu Li, Errui Ding
 
-[[`arXiv`](https://arxiv.org/abs/2207.08080)] [[`Project`](https://amberwangyili.github.io/neurop)] [[`BibTeX`](#CitingNeurOp)]
+[[`arXiv`](https://arxiv.org/abs/2207.08080)] [[`Project`](https://amberwangyili.github.io/neurop)] [[`BibTeX`](#CitingNeurOp)] 
+
+[[`Offical Paddle Implementation`](https://github.com/amberwangyili/neurop)] 
+
+[[`Unofficial Pytorch Implementation`](https://github.com/amberwangyili/neurop-pytorch)] 
 
 
 ## Datasets
