@@ -14,7 +14,6 @@ The following code repos are still under construction and will be released by th
 ## Datasets
 
 Pretrain data to initialize our neurOps is hosted on [百度网盘](https://pan.baidu.com/s/1r9zyYzD2-GuNGgu2dSKAYg) (code:pld9). 
-Or you can directly use the pretrained model weights provided in the repo.
 
 ### MIT-Adobe FiveK
 
