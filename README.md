@@ -8,12 +8,12 @@
 
 [[`Offical Paddle Implementation`](https://github.com/amberwangyili/neurop)] 
 
-[[` Pytorch Implementation`](https://github.com/amberwangyili/neurop-pytorch)] 
+[[`Pytorch Implementation`](https://github.com/amberwangyili/neurop-pytorch)] 
 
 [[`Jittor Implementation`](https://github.com/amberwangyili/neurop-jittor)]
 
 <p align="center"> 
-  <img width="100%" src="https://yili.host/assets/pdf/advantage.png">
+  <img src="https://yili.host/assets/pdf/advantage.png">
 </p><b>Left</b>: Compared with previous state-of-the-art methods, NeurOp achieves superior performance with only 28k parameters (~75% of CSRNet). <b>Right</b>: Strength Controllability Results. Our method can directly change the retouching output with intuitive control (i.e. directly modify the scalar strengths)
 
 
