@@ -1,0 +1,23 @@
+#### general settings
+name: neurop_test_lite
+is_init: false
+is_train: false
+device: cuda
+weights: ../pretrained_models/neurop_fivek_lite.pth
+
+#### datasets
+datasets:
+  name: fivek_lite
+  mode: finetune
+  dataroot: dataset-lite
+  n_cpus: 1
+  batch_size: 1
+
+#### network structures
+network_G:
+  init_model: ~ 
+  in_nc: 3
+  out_nc: 3
+  base_nf: 64
+  cond_nf: 32
+  strict_load: true

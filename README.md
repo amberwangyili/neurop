@@ -6,20 +6,20 @@
 
 [[`arXiv`](https://arxiv.org/abs/2207.08080)] [[`project`](https://amberwangyili.github.io/neurop)] [[`doi`](https://www.ecva.net/papers/eccv_2022/papers_ECCV/html/4401_ECCV_2022_paper.php)]
 
-[[`Offical Paddle Implementation`](https://github.com/amberwangyili/neurop)] 
+[[`Paddle Implementation`](codes_paddle)](**Offical**)
 
-[[`Pytorch Implementation`](https://github.com/amberwangyili/neurop-pytorch)] 
+[[`Pytorch Implementation`](codes_pytorch)] 
 
-[[`Jittor Implementation`](https://github.com/amberwangyili/neurop-jittor)]
+[[`Jittor Implementation`](codes_jittor)]
 
 <p align="center"> 
-  <img src="./advantage.png">
+  <img src="figures/advantage.png">
 </p><b>Left</b>: Compared with previous state-of-the-art methods, NeurOp achieves superior performance with only 28k parameters (~75% of CSRNet). <b>Right</b>: Strength Controllability Results. Our method can directly change the retouching output with intuitive control (i.e. directly modify the scalar strengths)
 
 
 
 <p align="center"> 
-	<img src="./result.png">
+	<img src="figures/result.png">
 </p>
 
 
@@ -35,6 +35,79 @@ We host all these data in [百度网盘](https://pan.baidu.com/s/1GD1VzZhSoRG6qO
 * There are two preprocessed versions of MIT-Adobe FiveK, in our paper, we refer them as MIT-Adobe FiveK-Dark (originally provided by [CSRNet](https://github.com/hejingwenhejingwen/CSRNet)) and MIT-Adobe FiveK-Lite (originally provided by [Distort-and-Recover](https://github.com/Jongchan/DISTORT-AND-RECOVER-CVPR18)). 
 
 * The official PPR10K dataset link is [here](https://github.com/csjliang/PPR10K).
+
+
+## Get Started
+
+- Clone this repo
+
+  ```
+  git clone https://github.com/amberwangyili/neurop
+  ```
+  
+- Download the Dataset from [百度网盘](https://pan.baidu.com/s/1GD1VzZhSoRG6qOQ55u2buQ) (code:jvvq) and unzip in project folder
+
+  ```bash
+  tree -L 2 neurop/datasets
+  # the output should be like the following:
+  datasets/
+  ├── dataset-dark
+  │   ├── testA
+  │   ├── testB
+  │   ├── trainA
+  │   └── trainB
+  ├── dataset-init
+  │   ├── BC
+  │   ├── EX
+  │   └── VB
+  ├── dataset-lite
+  │   ├── testA
+  │   ├── testB
+  │   ├── trainA
+  │   └── trainB
+  └── dataset-ppr
+      ├── ppr-a
+      ├── ppr-b
+      ├── ppr-c
+      ├── testA
+      ├── testM
+      ├── trainA
+      └── trainM
+  ```
+
+- Install Dependencies
+
+  ```bash 
+  cd neurop
+  pip install -r requirements.txt 
+  ```
+
+## Test
+
+1. We provide pretrained model weights for MIT-Adobe FiveK and PPR10K in `pretrain_models`
+
+2. Run command:
+
+   ```bash
+   python test.py -config ./configs/test/<configuaration-name>.yaml 
+   ```
+
+3. The evaluation results will be in the `neurop/results` folder
+
+## Train
+
+1. Initialization individual neural color operators:
+   
+   ```bash
+   python train.py -config ./configs/init_neurop.yaml 
+   ```
+
+2. Finetune with strength predictors:
+
+   ```bash
+   python train.py -config ./configs/train/<configuration-name>.yaml 
+   ```
+
 
 
 ## BibTex

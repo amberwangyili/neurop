@@ -1,0 +1,32 @@
+#### general settings
+name: neurop_train_mit5k_lite
+is_init: false
+is_train: true
+device: cuda 
+
+#### datasets
+datasets:
+  name: fivek_lite
+  mode: finetune
+  dataroot: dataset-lite
+  n_cpus: 8
+  batch_size: 1
+
+#### network structures
+network_G:
+  init_model: ../experiments/neurop_init/models/latest_neurop_initialization.pth
+  in_nc: 3
+  out_nc: 3
+  base_nf: 64
+  cond_nf: 32
+  strict_load: true
+
+
+#### training settings: learning rate scheme, loss
+train:
+  lr_G: !!float 5e-5
+  beta1: 0.9
+  beta2: 0.99
+  niter: 600000
+  manual_seed: 0
+  pixel_weight: 10.0
